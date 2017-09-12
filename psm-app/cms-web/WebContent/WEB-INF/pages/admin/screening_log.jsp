@@ -35,7 +35,7 @@
                                     <c:if test="${not empty output}">
                                         <div class="row">
                                             <label>Status</label>
-                                            <span class="floatL"><b>:</b></span>
+
                                             <span>SUCCESS</span>
                                         </div>
 
@@ -60,7 +60,7 @@
                                             <c:forEach var="coldata" items="${record.columnData.nameValuePair}">
                                                 <div class="row">
                                                     <label>${coldata.name}</label>
-                                                    <span class="floatL"><b>:</b></span>
+
                                                     <span><c:out value="${coldata.value}"></c:out> </span>
                                                 </div>
                                             </c:forEach>
