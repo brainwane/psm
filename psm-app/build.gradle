@@ -268,3 +268,7 @@ project(':integration-tests') {
         systemProperty "webdriver.firefox.bin", System.getenv('FIREFOX_HOME')
     }
 }
+
+project(':sphinx-userdocs') {
+
+}
