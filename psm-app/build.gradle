@@ -270,5 +270,22 @@ project(':integration-tests') {
 }
 
 project(':sphinx-userdocs') {
+    task buildUserHelp(type: Exec) {
+      workingDir '../docs/userhelp'
+
+      // println 'Hello world! The working directory is:'
+      // println workingdir
+
+      executable 'workon'
+      args = ["javasphinx"]
+
+      //on linux
+      // executable new File(workingDir, 'sphinx-build')
+      // args = ['-b', 'html', '-a', 'source/', 'build/html/']
+
+      // executable 'make'
+      // args = ["html"]
+
+    }
 
 }
